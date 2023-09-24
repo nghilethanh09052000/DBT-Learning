@@ -1,0 +1,98 @@
+[0m09:57:24.411556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843694D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843694D150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843694CF10>]}
+
+
+============================== 09:57:24.418653 | 8a304e26-a590-45c2-b24c-9e8fbbf3f22a ==============================
+[0m09:57:24.418653 [info ] [MainThread]: Running with dbt=1.6.3
+[0m09:57:24.419652 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Admin.DESKTOP-IRFPD10\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init dbtlearn', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:57:24.422725 [debug] [MainThread]: Starter project path: D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m09:57:24.457522 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:57:24.459432 [info ] [MainThread]: Setting up your profile.
+[0m09:58:42.054427 [error] [MainThread]: Encountered an error:
+
+[0m09:58:42.062777 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\cli\requires.py", line 87, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\cli\requires.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\task\init.py", line 308, in run
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\click\termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\click\termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m09:58:42.073136 [debug] [MainThread]: Command `dbt init` failed at 09:58:42.073136 after 77.68 seconds
+[0m09:58:42.074164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284362699D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284356C6790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843681D8D0>]}
+[0m09:58:42.074164 [debug] [MainThread]: Flushing usage events
+[0m09:59:03.560922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002661218D590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000266120615D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002661218D210>]}
+
+
+============================== 09:59:03.563920 | d7b3e5e8-f542-4f68-bae9-aeb1878d75b6 ==============================
+[0m09:59:03.563920 [info ] [MainThread]: Running with dbt=1.6.3
+[0m09:59:03.564957 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Admin.DESKTOP-IRFPD10\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbtlearn', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:59:03.565921 [debug] [MainThread]: Starter project path: D:\Users\Admin.DESKTOP-IRFPD10\anaconda3\Lib\site-packages\dbt\include\starter_project
+[0m09:59:03.584448 [info ] [MainThread]: 
+Your new dbt project "dbtlearn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:59:03.586922 [info ] [MainThread]: Setting up your profile.
+[0m10:02:04.388374 [info ] [MainThread]: Profile dbtlearn written to C:\Users\Admin.DESKTOP-IRFPD10\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:02:04.391372 [debug] [MainThread]: Command `dbt init` succeeded at 10:02:04.390370 after 180.84 seconds
+[0m10:02:04.392369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002660B76D950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002660B6DF790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002660B6DF810>]}
+[0m10:02:04.393592 [debug] [MainThread]: Flushing usage events
+[0m10:05:56.660778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6F15CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6F13810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6F16650>]}
+
+
+============================== 10:05:56.667680 | bb6d3b23-5671-4786-b4ec-319a9fc76edd ==============================
+[0m10:05:56.667680 [info ] [MainThread]: Running with dbt=1.6.3
+[0m10:05:56.669680 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Admin.DESKTOP-IRFPD10\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select dim_listings_cleansed', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:05:56.670682 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Study\Data Build Tool\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:05:56.671680 [debug] [MainThread]: Command `dbt run` failed at 10:05:56.671680 after 0.03 seconds
+[0m10:05:56.671680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6DCD310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6EFF4D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D5A6EFD250>]}
+[0m10:05:56.672680 [debug] [MainThread]: Flushing usage events
